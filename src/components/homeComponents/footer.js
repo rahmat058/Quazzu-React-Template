@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export class Footer extends Component {
   render() {
@@ -14,9 +15,9 @@ export class Footer extends Component {
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text">Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Solutions</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Sign Up</a></li>
+                  <li><Link class="grey-text text-lighten-3" to="/">Home</Link></li>
+                  <li><Link class="grey-text text-lighten-3" to="/solutions">Solutions</Link></li>
+                  <li><Link class="grey-text text-lighten-3" to="/signup">Sign Up</Link></li>
                 </ul>
               </div>
             </div>

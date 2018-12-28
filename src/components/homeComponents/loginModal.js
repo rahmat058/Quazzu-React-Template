@@ -7,6 +7,7 @@ class LoginModal extends Component {
     let modal = document.querySelectorAll('.modal');
     M.Modal.init(modal, {});
   }
+  
   render() {
     return (
       <div id="login-modal" className="modal">

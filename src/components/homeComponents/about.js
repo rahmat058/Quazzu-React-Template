@@ -13,7 +13,7 @@ class About extends Component {
               </p>
             </div>
             <div className="col s12 m6">
-              <img src={require('../assets/img/tech.jpg')} alt="" className='circle responsive-img'/>
+              <img src={require('../../assets/img/tech.jpg')} alt="" className='circle responsive-img'/>
             </div>
           </div>
         </div>

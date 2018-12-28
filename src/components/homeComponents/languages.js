@@ -13,22 +13,22 @@ class Languages extends Component {
             <br/>
             <div className="row">
               <div className="col s2">
-                <img src={require('../assets/img/python-logo.png')} alt="" className='responsive-img'/>
+                <img src={require('../../assets/img/python-logo.png')} alt="" className='responsive-img'/>
               </div>
               <div className="col s2">
-                <img src={require('../assets/img/ruby-logo.png')} alt="" className='responsive-img'/>
+                <img src={require('../../assets/img/ruby-logo.png')} alt="" className='responsive-img'/>
               </div>
               <div className="col s2">
-                <img src={require('../assets/img/php-logo.png')} alt="" className='responsive-img'/>
+                <img src={require('../../assets/img/php-logo.png')} alt="" className='responsive-img'/>
               </div>
               <div className="col s2">
-                <img src={require('../assets/img/node-logo.png')} alt="" className='responsive-img'/>
+                <img src={require('../../assets/img/node-logo.png')} alt="" className='responsive-img'/>
               </div>
               <div className="col s2">
-                <img src={require('../assets/img/c-sharp-logo.png')} alt="" className='responsive-img'/>
+                <img src={require('../../assets/img/c-sharp-logo.png')} alt="" className='responsive-img'/>
               </div>
               <div className="col s2">
-                <img src={require('../assets/img/java-logo.png')} alt="" className='responsive-img'/>
+                <img src={require('../../assets/img/java-logo.png')} alt="" className='responsive-img'/>
               </div>
             </div>
           </div>

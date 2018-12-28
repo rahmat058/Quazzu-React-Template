@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import M from 'materialize-css'
 
-import NavbarBodyButton from './subComponents/navbarBodyButton'
+import NavbarBodyButton from '../subComponents/navbarBodyButton'
 
 class Navbar extends Component {
 
@@ -13,7 +13,7 @@ class Navbar extends Component {
   }
 
   render() {
-    const { title, subTitle, para, navBodyButton, customClass } = this.props
+    const { title, subTitle, navBodyButton, customClass } = this.props
 
     return (
       <header className={`${ customClass }`}>
@@ -21,9 +21,6 @@ class Navbar extends Component {
           <div className="container">
             <div className="nav-wrapper">
               <Link to='/' className="brand-logo">Quazzu</Link>
-              {/* <a href="#" data-activates="mobile-nav" className="button-collapse">
-                <i className="fa fa-bars"></i>
-              </a> */}
               <a href="#" data-target='mobile-nav' className="sidenav-trigger">
                 <i className="material-icons">menu</i>
               </a>
@@ -32,10 +29,10 @@ class Navbar extends Component {
                   <Link to='/' className="active-link">Home</Link>
                 </li>
                 <li>
-                  <a href="solutions.html">Solutions</a>
+                  <Link to="/solutions">Solutions</Link>
                 </li>
                 <li>
-                  <a href="signup.html">Sign Up</a>
+                  <Link to="/signup">Sign Up</Link>
                 </li>
                 <li>
                   <Link to="/login-modal" className="btn purple modal-trigger">Login</Link>
@@ -66,22 +63,22 @@ class Navbar extends Component {
             <div className="divider"></div>
           </li>
           <li>
-            <a href="index.html">
-              <i className="fa fa-home grey-text text-darken-4"></i> Home</a>
+            <Link to="/">
+              <i className="fa fa-home grey-text text-darken-4"></i> Home</Link>
           </li>
           <li>
-            <a href="solutions.html">
-              <i className="fa fa-cog grey-text text-darken-4"></i> Solutions</a>
+            <Link to="/solutions">
+              <i className="fa fa-cog grey-text text-darken-4"></i> Solutions</Link>
           </li>
           <li>
-            <a href="signup.html">
-              <i className="fa fa-users grey-text text-darken-4"></i> Sign Up</a>
+            <Link to="/signup">
+              <i className="fa fa-users grey-text text-darken-4"></i> Sign Up</Link>
           </li>
           <li>
             <div className="divider"></div>
           </li>
           <li>
-            <a href="#" className="btn purple">Login</a>
+            <Link to="/login-modal" className="btn purple modal-trigger">Login</Link>
           </li>
         </ul>
 
