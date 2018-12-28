@@ -8,6 +8,7 @@ import Navbar from './components/navbar'
 import IconBoxes from './components/icon-boxes'
 import About from './components/about'
 import Developers from './components/developers'
+import Languages from './components/languages'
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
           <IconBoxes />
           <About />
           <Developers />
+          <Languages />
         </div>
       </BrowserRouter>
     );
