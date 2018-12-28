@@ -11,7 +11,6 @@ class Solutions extends Component {
        <Navbar 
           title='Welcome To Quazzu'
           subTitle='Cloud Solutions'
-          para='Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit fugit deserunt quos provident aliquam inventore.'
           customClass='main-header-inner'
         />
         <SolutionsAbout />

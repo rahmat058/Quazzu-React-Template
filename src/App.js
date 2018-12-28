@@ -3,9 +3,10 @@ import 'materialize-css/dist/css/materialize.min.css'
 import './assets/css/main.css'
 import { BrowserRouter, Route } from 'react-router-dom'
 
+import Home from './components/home'
 import LoginModal from './components/homeComponents/loginModal'
 import Solutions from './components/solutionComponents/solutions'
-import Home from './components/home'
+import SignUp from './components/signupComponents/signup'
 
 class App extends Component {
   render() {
@@ -15,6 +16,7 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route path="/solutions" component={Solutions} />
           <Route path="/login-modal" component={LoginModal} />
+          <Route path="/signup" component={SignUp} />
         </div>
       </BrowserRouter>
     );
