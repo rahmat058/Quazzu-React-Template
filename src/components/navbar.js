@@ -8,7 +8,7 @@ class Navbar extends Component {
 
   componentDidMount() {
     //Sidenav Open
-    let sideNav = document.querySelector(".button-collapse");
+    let sideNav = document.querySelector(".sidenav");
     M.Sidenav.init(sideNav, {})
   }
 
@@ -21,8 +21,11 @@ class Navbar extends Component {
           <div className="container">
             <div className="nav-wrapper">
               <Link to='/' className="brand-logo">Quazzu</Link>
-              <a href="#" data-activates="mobile-nav" className="button-collapse">
+              {/* <a href="#" data-activates="mobile-nav" className="button-collapse">
                 <i className="fa fa-bars"></i>
+              </a> */}
+              <a href="#" data-target='mobile-nav' className="sidenav-trigger">
+                <i className="material-icons">menu</i>
               </a>
               <ul className="right hide-on-med-and-down">
                 <li>
@@ -57,31 +60,31 @@ class Navbar extends Component {
           </div>
         </nav>
 
-        {/* <ul className="side-nav" id="mobile-nav">
-                <h4 className="purple-text text-darken-4 center">Quazzu</h4>
-                <li>
-                  <div className="divider"></div>
-                </li>
-                <li>
-                  <a href="index.html">
-                    <i className="fa fa-home grey-text text-darken-4"></i> Home</a>
-                </li>
-                <li>
-                  <a href="solutions.html">
-                    <i className="fa fa-cog grey-text text-darken-4"></i> Solutions</a>
-                </li>
-                <li>
-                  <a href="signup.html">
-                    <i className="fa fa-users grey-text text-darken-4"></i> Sign Up</a>
-                </li>
-                <li>
-                  <div className="divider"></div>
-                </li>
-                <li>
-                  <a href="#" className="btn purple">Login</a>
-                </li>
-              </ul> */}
-        
+        <ul className="sidenav" id="mobile-nav">
+          <h4 className="purple-text text-darken-4 center">Quazzu</h4>
+          <li>
+            <div className="divider"></div>
+          </li>
+          <li>
+            <a href="index.html">
+              <i className="fa fa-home grey-text text-darken-4"></i> Home</a>
+          </li>
+          <li>
+            <a href="solutions.html">
+              <i className="fa fa-cog grey-text text-darken-4"></i> Solutions</a>
+          </li>
+          <li>
+            <a href="signup.html">
+              <i className="fa fa-users grey-text text-darken-4"></i> Sign Up</a>
+          </li>
+          <li>
+            <div className="divider"></div>
+          </li>
+          <li>
+            <a href="#" className="btn purple">Login</a>
+          </li>
+        </ul>
+
         <div className="showcase container">
           <div className="row">
             <div className="col s12 m10 offset-m1 center">
