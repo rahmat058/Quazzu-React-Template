@@ -9,6 +9,7 @@ import IconBoxes from './components/icon-boxes'
 import About from './components/about'
 import Developers from './components/developers'
 import Languages from './components/languages'
+import Podcast from './components/podcast'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
           <About />
           <Developers />
           <Languages />
+          <Podcast />
         </div>
       </BrowserRouter>
     );

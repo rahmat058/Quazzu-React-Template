@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Developers extends Component {
+class Developers extends Component {
   render() {
     return (
       <section className="section section-developers white-text">

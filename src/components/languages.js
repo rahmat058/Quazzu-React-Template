@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Languages extends Component {
+class Languages extends Component {
   render() {
     return (
       <section className="section section-languages grey lighten-4">
