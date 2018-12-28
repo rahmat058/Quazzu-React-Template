@@ -6,7 +6,7 @@ class Navbar extends Component {
 
   componentDidMount() {
     //Sidenav Open
-    let sideNav = document.querySelector(".sidenav");
+    let sideNav = document.querySelector(".button-collapse");
     M.Sidenav.init(sideNav, {})
   }
 
@@ -49,8 +49,11 @@ class Navbar extends Component {
                   </Link>
                 </li>
               </ul>
-              
-              {/* <ul className="side-nav" id="mobile-nav">
+            </div>
+          </div>
+        </nav>
+
+        {/* <ul className="side-nav" id="mobile-nav">
                 <h4 className="purple-text text-darken-4 center">Quazzu</h4>
                 <li>
                   <div className="divider"></div>
@@ -74,9 +77,6 @@ class Navbar extends Component {
                   <a href="#" className="btn purple">Login</a>
                 </li>
               </ul> */}
-            </div>
-          </div>
-        </nav>
         
         <div className="showcase container">
           <div className="row">

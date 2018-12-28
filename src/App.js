@@ -10,6 +10,7 @@ import About from './components/about'
 import Developers from './components/developers'
 import Languages from './components/languages'
 import Podcast from './components/podcast'
+import Testimonial from './components/testimonial'
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Developers />
           <Languages />
           <Podcast />
+          <Testimonial />
         </div>
       </BrowserRouter>
     );
