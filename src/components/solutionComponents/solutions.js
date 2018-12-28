@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from '../homeComponents/navbar'
 import Footer from '../homeComponents/footer'
 import SolutionsAbout from './solutionsAbout'
+import Features from './features'
 
 class Solutions extends Component {
   render() {
@@ -14,6 +15,7 @@ class Solutions extends Component {
           customClass='main-header-inner'
         />
         <SolutionsAbout />
+        <Features />
         <Footer />
       </React.Fragment>
     )
