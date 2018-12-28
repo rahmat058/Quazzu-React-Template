@@ -57,6 +57,14 @@
   background: rgba(112, 81, 176, 0.9)
 }
 
+.carousel-item p {
+  font-size: 20px !important;
+}
+
+.reset-password-btn {
+  margin-right: 10px !important;
+}
+
 @media(max-width: 500px) {
   .section-developers,
   .section-podcast {

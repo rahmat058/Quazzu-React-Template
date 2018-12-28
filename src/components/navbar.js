@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import M from 'materialize-css'
 
+import NavbarBodyButton from './subComponents/navbarBodyButton'
+
 class Navbar extends Component {
 
   componentDidMount() {
@@ -11,8 +13,10 @@ class Navbar extends Component {
   }
 
   render() {
+    const { title, subTitle, para, navBodyButton, customClass } = this.props
+
     return (
-      <header className="main-header">
+      <header className={`${ customClass }`}>
         <nav className="transparent">
           <div className="container">
             <div className="nav-wrapper">
@@ -31,7 +35,7 @@ class Navbar extends Component {
                   <a href="signup.html">Sign Up</a>
                 </li>
                 <li>
-                  <a href="#" className="btn purple">Login</a>
+                  <Link to="/login-modal" className="btn purple modal-trigger">Login</Link>
                 </li>
                 <li>
                   <Link to="https://facebook.com">
@@ -81,13 +85,11 @@ class Navbar extends Component {
         <div className="showcase container">
           <div className="row">
             <div className="col s12 m10 offset-m1 center">
-              <h5>Welcome To Quazzu</h5>
-              <h1>Build For The Future</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit fugit deserunt quos provident aliquam inventore.</p>
-              <br/>
-              <br/>
-              <a href="solutions.html" className="btn btn-large white purple-text learn-more">Learn More</a>
-              <a href="signup.html" className="btn btn-large purple white-text">Sign Up</a>
+              <h5>{title}</h5>
+              <h1>{subTitle}</h1>
+              {
+                (navBodyButton === 'true') ? <NavbarBodyButton /> : ''
+              } 
             </div>
           </div>
         </div>
