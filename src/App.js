@@ -7,6 +7,7 @@ import { BrowserRouter } from 'react-router-dom'
 import Navbar from './components/navbar'
 import IconBoxes from './components/icon-boxes'
 import About from './components/about'
+import Developers from './components/developers'
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Navbar />
           <IconBoxes />
           <About />
+          <Developers />
         </div>
       </BrowserRouter>
     );
