@@ -20,6 +20,18 @@
   padding-top: 100px;
 }
 
+.main-header-inner {
+  background: url(../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  color: #fff;
+}
+
+.main-header-inner .showcase {
+  padding-top: 50px;
+}
+
 .active-link {
   color: #d847f1;
   font-weight: bold;
@@ -63,6 +75,10 @@
 
 .reset-password-btn {
   margin-right: 10px !important;
+}
+
+.tabs .indicator {
+  background-color: #6a1b9a;
 }
 
 @media(max-width: 500px) {
