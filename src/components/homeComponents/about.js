@@ -7,7 +7,7 @@ class About extends Component {
         <div className="container">
           <div className="row">
             <div className="col s12 m6">
-              <h3><span className="deep-purple-text text-darken-1">About</span>Us</h3>
+              <h3><span className="deep-purple-text text-darken-1">About</span> Us</h3>
               <p className="flow-text">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem provident labore ipsa sapiente, id nihil praesentium eum non ut ad!
               </p>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import M from 'materialize-css'
 
 import NavbarBodyButton from '../subComponents/navbarBodyButton'
@@ -26,16 +26,16 @@ class Navbar extends Component {
               </a>
               <ul className="right hide-on-med-and-down">
                 <li>
-                  <Link to='/' className="active-link">Home</Link>
+                  <NavLink  exact to='/'  activeClassName="active-link">Home</NavLink >
                 </li>
                 <li>
-                  <Link to="/solutions">Solutions</Link>
+                  <NavLink to="/solutions" activeClassName="active-link">Solutions</NavLink>
                 </li>
                 <li>
-                  <Link to="/signup">Sign Up</Link>
+                  <NavLink to="/signup" activeClassName="active-link">Sign Up</NavLink>
                 </li>
                 <li>
-                  <Link to="/login-modal" className="btn purple modal-trigger">Login</Link>
+                  <NavLink to="/login-modal" className="btn purple modal-trigger">Login</NavLink>
                 </li>
                 <li>
                   <Link to="https://facebook.com">
@@ -63,22 +63,22 @@ class Navbar extends Component {
             <div className="divider"></div>
           </li>
           <li>
-            <Link to="/">
-              <i className="fa fa-home grey-text text-darken-4"></i> Home</Link>
+            <NavLink exact to="/" activeClassName="active-link">
+              <i className="fa fa-home grey-text text-darken-4"></i> Home</NavLink>
           </li>
           <li>
-            <Link to="/solutions">
-              <i className="fa fa-cog grey-text text-darken-4"></i> Solutions</Link>
+            <NavLink to="/solutions" activeClassName="active-link">
+              <i className="fa fa-cog grey-text text-darken-4"></i> Solutions</NavLink>
           </li>
           <li>
-            <Link to="/signup">
-              <i className="fa fa-users grey-text text-darken-4"></i> Sign Up</Link>
+            <NavLink to="/signup" activeClassName="active-link">
+              <i className="fa fa-users grey-text text-darken-4"></i> Sign Up</NavLink>
           </li>
           <li>
             <div className="divider"></div>
           </li>
           <li>
-            <Link to="/login-modal" className="btn purple modal-trigger">Login</Link>
+            <NavLink to="/login-modal" className="btn purple modal-trigger">Login</NavLink>
           </li>
         </ul>
 
