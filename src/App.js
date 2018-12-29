@@ -4,7 +4,6 @@ import './assets/css/main.css'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import Home from './components/home'
-import LoginModal from './components/homeComponents/loginModal'
 import Solutions from './components/solutionComponents/solutions'
 import SignUp from './components/signupComponents/signup'
 
@@ -15,7 +14,6 @@ class App extends Component {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/solutions" component={Solutions} />
-          <Route path="/login-modal" component={LoginModal} />
           <Route path="/signup" component={SignUp} />
         </Switch>
       </BrowserRouter>

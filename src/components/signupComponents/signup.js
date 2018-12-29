@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import M from 'materialize-css'
 import Navbar from '../homeComponents/navbar'
 import Footer from '../homeComponents/footer'
+import LoginModal from '../homeComponents/loginModal'
 
 class SignUp extends Component {
 
@@ -18,6 +19,7 @@ class SignUp extends Component {
           subTitle='Create An Account'
           customClass='main-header-inner'
         />
+        <LoginModal />
 
         <section className="section section-signup">
           <div className="container">

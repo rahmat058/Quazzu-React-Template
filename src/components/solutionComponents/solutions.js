@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Navbar from '../homeComponents/navbar'
 import Footer from '../homeComponents/footer'
+import LoginModal from '../homeComponents/loginModal'
 import SolutionsAbout from './solutionsAbout'
 import Features from './features'
 
@@ -13,6 +14,7 @@ class Solutions extends Component {
           subTitle='Cloud Solutions'
           customClass='main-header-inner'
         />
+        <LoginModal />
         <SolutionsAbout />
         <Features />
         <Footer />

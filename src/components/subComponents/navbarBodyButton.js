@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function NavbarBodyButton() {
   return (
@@ -6,8 +7,8 @@ function NavbarBodyButton() {
       <p>'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit fugit deserunt quos provident aliquam inventore.'</p>
       <br/>
       <br/>
-      <a href="solutions.html" className="btn btn-large white purple-text learn-more">Learn More</a>
-      <a href="signup.html" className="btn btn-large purple white-text">Sign Up</a>
+      <Link to="/solutions" className="btn btn-large white purple-text learn-more">Learn More</Link>
+      <Link to="/signup" className="btn btn-large purple white-text">Sign Up</Link>
     </React.Fragment>
   )
 }

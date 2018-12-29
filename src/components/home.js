@@ -8,6 +8,7 @@ import Languages from './homeComponents/languages'
 import Podcast from './homeComponents/podcast'
 import Testimonial from './homeComponents/testimonial'
 import Footer from './homeComponents/footer'
+import LoginModal from './homeComponents/loginModal'
 
 
 class Home extends Component {
@@ -20,6 +21,7 @@ class Home extends Component {
           navBodyButton='true'
           customClass='main-header'
         />
+        <LoginModal />
         <IconBoxes />
         <About />
         <Developers />
